@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-symbol-array",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Test if a value is an array-like object containing only symbols.",
   "license": "Apache-2.0",
   "author": {
