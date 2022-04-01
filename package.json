@@ -1,0 +1,43 @@
+{
+  "name": "@stdlib/assert-is-symbol-array",
+  "version": "0.0.0",
+  "description": "Test if a value is an array-like object containing only symbols.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/assert-is-symbol-array.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdassert",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "function",
+    "array",
+    "array-like",
+    "symbol",
+    "sym",
+    "is",
+    "issymbol",
+    "isarray",
+    "isarraylike",
+    "type",
+    "check",
+    "valid",
+    "validate",
+    "test"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
