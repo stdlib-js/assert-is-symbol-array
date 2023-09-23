@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-symbol-array/tags). For example,
+
+```javascript
 import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.1.0-deno/mod.js';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
 ```
 
 #### isSymbolArray( value )
@@ -106,7 +111,7 @@ bool = isSymbolArray.objects( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
 ```javascript
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.1.0-deno/mod.js';
+import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
 
 var hasSymbols = hasSymbolSupport();
 var bool;
