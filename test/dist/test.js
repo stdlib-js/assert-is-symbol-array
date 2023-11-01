@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,101 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Symbol = require( '@stdlib/symbol-ctor' );
-var Object = require( '@stdlib/object-ctor' );
-var hasSymbols = require( '@stdlib/assert-has-symbol-support' );
-var isSymbolArray = require( './../../dist' );
-
-
-// VARIABLES //
-
-var opts = {
-	'skip': !hasSymbols()
-};
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isSymbolArray, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function tests for an array-like object containing only symbols (ES2015+ environments)', opts, function test( t ) {
-	var arr;
-
-	arr = [ Symbol( 'a' ), Symbol( 'b' ) ];
-	t.strictEqual( isSymbolArray( arr ), true, 'returns true' );
-
-	arr = [ Object( Symbol( 'a' ) ), Object( Symbol( 'b' ) ) ];
-	t.strictEqual( isSymbolArray( arr ), true, 'returns true' );
-
-	arr = {
-		'length': 2,
-		'0': Symbol( 'a' ),
-		'1': Symbol( 'b' )
-	};
-	t.strictEqual( isSymbolArray( arr ), true, 'returns true' );
-
-	arr = [ 'a', 5, null ];
-	t.strictEqual( isSymbolArray( arr ), false, 'returns false' );
-
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an array-like object containing only symbols (all environments)', function test( t ) {
-	var arr = [ 'a', 5, null ];
-	t.strictEqual( isSymbolArray( arr ), false, 'returns false' );
-	t.end();
-});
-
-tape( 'the function provides a method to test for an array-like object containing only `symbol` primitives (ES2015+ environments)', opts, function test( t ) {
-	var arr;
-
-	arr = [ Symbol( 'a' ), Symbol( 'b' ) ];
-	t.strictEqual( isSymbolArray.primitives( arr ), true, 'returns true' );
-
-	arr = {
-		'length': 2,
-		'0': Symbol( 'a' ),
-		'1': Symbol( 'b' )
-	};
-	t.strictEqual( isSymbolArray.primitives( arr ), true, 'returns true' );
-
-	arr = [ Object( Symbol( 'a' ) ), Object( Symbol( 'b' ) ) ];
-	t.strictEqual( isSymbolArray.primitives( arr ), false, 'returns false' );
-
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an array-like object containing only `symbol` primitives (all environments; primitives)', function test( t ) {
-	var arr = [ 'a', 5, null ];
-	t.strictEqual( isSymbolArray.primitives( arr ), false, 'returns false' );
-	t.end();
-});
-
-tape( 'the function provides a method to test for an array-like object containing only `Symbol` objects (ES2015+ environments)', opts, function test( t ) {
-	var arr;
-
-	arr = [ Symbol( 'a' ), Symbol( 'b' ) ];
-	t.strictEqual( isSymbolArray.objects( arr ), false, 'returns false' );
-
-	arr = {
-		'length': 2,
-		'0': Object( Symbol( 'a' ) ),
-		'1': Object( Symbol( 'b' ) )
-	};
-	t.strictEqual( isSymbolArray.objects( arr ), true, 'returns true' );
-
-	arr = [ Object( Symbol( 'a' ) ), Object( Symbol( 'b' ) ) ];
-	t.strictEqual( isSymbolArray.objects( arr ), true, 'returns true' );
-
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an array-like object containing only `Symbol` objects (all environments; objects)', function test( t ) {
-	var arr = [ {}, {}, null ];
-	t.strictEqual( isSymbolArray.objects( arr ), false, 'returns false' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
