@@ -44,7 +44,7 @@
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.1.1",
     "@stdlib/assert-is-boolean": "^0.1.1",
-    "@stdlib/bench": "^0.2.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/object-ctor": "^0.1.1",
     "@stdlib/symbol-ctor": "^0.1.1",
