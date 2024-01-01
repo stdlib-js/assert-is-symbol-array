@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isBoolean = require( '@stdlib/assert-is-boolean' ).isPrimitive;
 var pow = require( '@stdlib/math-base-special-pow' );
 var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
