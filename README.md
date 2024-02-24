@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@esm/index.mjs';
+import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.2.1-esm/index.mjs';
 ```
 
 #### isSymbolArray( value )
@@ -113,7 +113,7 @@ bool = isSymbolArray.objects( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
 
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@esm/index.mjs';
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@esm/index.mjs';
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@esm/index.mjs';
+import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.2.1-esm/index.mjs';
 
 var hasSymbols = hasSymbolSupport();
 var bool;
