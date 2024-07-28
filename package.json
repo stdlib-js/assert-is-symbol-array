@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-symbol-array",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Test if a value is an array-like object containing only symbols.",
   "license": "Apache-2.0",
   "author": {
@@ -37,16 +37,16 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-symbol": "^0.2.1",
-    "@stdlib/assert-tools-array-like-function": "^0.2.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1"
+    "@stdlib/assert-is-symbol": "^0.2.2",
+    "@stdlib/assert-tools-array-like-function": "^0.2.2",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-has-symbol-support": "^0.2.1",
-    "@stdlib/assert-is-boolean": "^0.2.1",
+    "@stdlib/assert-has-symbol-support": "^0.2.2",
+    "@stdlib/assert-is-boolean": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.2.1",
     "@stdlib/object-ctor": "^0.2.1",
-    "@stdlib/symbol-ctor": "^0.2.1",
+    "@stdlib/symbol-ctor": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
