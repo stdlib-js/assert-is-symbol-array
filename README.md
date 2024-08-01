@@ -35,25 +35,32 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only [symbols][mdn-symbol].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-symbol-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-symbol-array/tags). For example,
-
-```javascript
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@v0.2.2-deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
+var isSymbolArray = require( '@stdlib/assert-is-symbol-array' );
 ```
 
 #### isSymbolArray( value )
@@ -61,7 +68,7 @@ import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/asser
 Tests if a `value` is an array-like object containing only [symbols][mdn-symbol].
 
 ```javascript
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
+var Symbol = require( '@stdlib/symbol-ctor' );
 
 var bool = isSymbolArray( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
 // returns true
@@ -75,8 +82,8 @@ bool = isSymbolArray( [ 'beep', 'boop' ] );
 Tests if a `value` is an array-like object containing only [`symbol`][mdn-symbol] primitives.
 
 ```javascript
-import Object from 'https://cdn.jsdelivr.net/gh/stdlib-js/object-ctor@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
+var Object = require( '@stdlib/object-ctor' );
+var Symbol = require( '@stdlib/symbol-ctor' );
 
 var bool = isSymbolArray.primitives( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
 // returns true
@@ -90,8 +97,8 @@ bool = isSymbolArray.primitives( [ Symbol( 'beep' ), Object( Symbol( 'boop' ) ) 
 Tests if a `value` is an array-like object containing only [`Symbol`][mdn-symbol] objects.
 
 ```javascript
-import Object from 'https://cdn.jsdelivr.net/gh/stdlib-js/object-ctor@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
+var Object = require( '@stdlib/object-ctor' );
+var Symbol = require( '@stdlib/symbol-ctor' );
 
 var bool = isSymbolArray.objects( [ Object( Symbol( 'beep' ) ), Object( Symbol( 'boop' ) ) ] );
 // returns true
@@ -111,9 +118,9 @@ bool = isSymbolArray.objects( [ Symbol( 'beep' ), Symbol( 'boop' ) ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import isSymbolArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-symbol-array@deno/mod.js';
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var isSymbolArray = require( '@stdlib/assert-is-symbol-array' );
 
 var hasSymbols = hasSymbolSupport();
 var bool;
@@ -171,7 +178,7 @@ bool = isSymbolArray( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -201,8 +208,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-symbol-array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-symbol-array
 
-[test-image]: https://github.com/stdlib-js/assert-is-symbol-array/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/assert-is-symbol-array/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/assert-is-symbol-array/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-symbol-array/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-symbol-array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-symbol-array?branch=main
@@ -238,9 +245,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/deno
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
-[@stdlib/assert/is-symbol]: https://github.com/stdlib-js/assert-is-symbol/tree/deno
+[@stdlib/assert/is-symbol]: https://github.com/stdlib-js/assert-is-symbol
 
 <!-- </related-links> -->
 
