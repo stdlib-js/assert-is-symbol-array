@@ -37,20 +37,20 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-symbol": "^0.2.2",
+    "@stdlib/assert-is-symbol": "^0.2.3",
     "@stdlib/assert-tools-array-like-function": "^0.2.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.2.3",
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/math-base-special-pow": "^0.3.0",
+    "@stdlib/assert-is-boolean": "^0.2.3",
+    "@stdlib/math-base-special-pow": "^0.3.1",
     "@stdlib/object-ctor": "^0.2.2",
     "@stdlib/symbol-ctor": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
